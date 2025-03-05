@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form-container{
+  max-width: 800px;
+  margin: 20px auto;
+}
+.form-container h1, h3{
+  text-align: center;
+  background-color: rgb(20, 186, 141);
+}
+.form-container h1{
+  padding: 20px 0;
+}
+.subtitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container h3{
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 400px;
+}
+.info-container{
+  max-width: 800px;
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row; 
+  margin: 0 10px;
+}
+.row input{
+  padding: 10px;
+}
+.first-name{
+   display: flex; 
+   flex-direction: column; 
+   min-width: 50%;
+}
+.first-name input{
+  margin-top: 10px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+.last-name{
+  display: flex; 
+  flex-direction: column; 
+  width: 90%;
+}
+.last-name input{
+ margin-top: 10px;
+ width: 95%;
+ margin-bottom: 20px;
+}
+.DOB{
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.DOB input{
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.gender-input{
+  margin-top: 10px;
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+.email input{
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.phone-number{
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+.phone-number input{
+  margin-top: 10px;
+  width: 95%;
+  margin-bottom: 20px;
+}
+.emergency-contact-name{
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  margin-right: 10px;
+}
+.emergency-contact-name label{
+  width: 50%;
+}
+.emergency-contact-name input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.emergency-contact-relationship{
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+.emergency-contact-relationship input{
+  margin-top: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.emergency-contact-number{
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+.emergency-contact-number input{
+  margin-top: 10px;
+  width: 95%;
+  margin-bottom: 20px;
+}
+.sport-information{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sport-information label{
+ margin-right: 20px;
+}
+.sport-information input{
+  margin-left: 10px;
+ }
+ .sport-option{
+  display: flex;
+  flex-direction: row;
+ }
+ .button{
+ text-align: center;
+ }
+ button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submitted_form{
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.submitted_form h2{
+  text-align: center;
+}
+.submitted_form button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submitted_form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) { 
+  .form-container{
+    max-width: 400px;
+    margin: 20px auto; 
+  }
+  .row{
+    display: flex;
+    flex-direction: column; 
+    margin: 0 10px;
+  }
+  .sport-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .sport-option {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    
+  }
+  
+  .sport-option label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; 
+  }
+  .submitted_form{
+    width: 250px;
+  }
+ }
+ @media (min-width: 1440px) { 
+  .form-container{
+    max-width: 1000px;
+    margin: 20px auto;  
+  }
+  .info-container{
+    max-width: 1000px;
+    width: 100%;
+  }
+  .submitted_form{
+    width: 800px;
+  }
+}
