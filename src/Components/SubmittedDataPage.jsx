@@ -14,7 +14,7 @@ function SubmittedDataPage() {
          <div>
    
          <p><strong>Name:</strong> {submittedData?.firstName} {submittedData?.lastName}</p>
-         <p><strong>Date of Birth:</strong> {submittedData?.DOb}</p>
+         <p><strong>Date of Birth:</strong> {submittedData?.dob}</p>
          <p><strong>Gender:</strong> {submittedData?.gender}</p>
          <p><strong>Email:</strong> {submittedData?.email}</p>
          <p><strong>Phone:</strong> {submittedData?.phone}</p>
