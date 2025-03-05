@@ -40,7 +40,7 @@ function Form() {
       sport,
       skills,
     };
-
+  
     // Send POST request to the backend server
     try {
       const response = await fetch('http://localhost:5000/api/users', {
@@ -53,6 +53,8 @@ function Form() {
       
       const data = await response.json();
       navigate('/submitted', { state: { submittedData: userData } });
+      
+   
       
       if (response.ok) {
     
@@ -119,9 +121,11 @@ function Form() {
                         type="date"
                         name="dob"
                         value={dob}
-                        onChange={(e) => setDOB(e.target.value)}
+                        
+                        onChange={(e) =>setDOB(e.target.value)}
                         required
                     />
+                    console.log(e.target.value); 
                     </div>
                     
                     <div className="gender">
@@ -170,7 +174,7 @@ function Form() {
                   name="phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$" // Optional regex for phone number validation
+                  pattern="^\+?1?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" // Optional regex for phone number validation
                   placeholder="+1 (555) 123-4567"
                   required
                 />
@@ -211,7 +215,7 @@ function Form() {
             name="emergency-phone"
             value={emergencyPhone}
             onChange={(e) => setEmergencyPhone(e.target.value)}
-           pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$" // Optional regex for phone number validation
+           pattern="^\+?1?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" // Optional regex for phone number validation
            placeholder="+1 (609) 123-4567"
            required >
         </input> 
