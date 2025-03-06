@@ -125,7 +125,7 @@ function Form() {
                         onChange={(e) =>setDOB(e.target.value)}
                         required
                     />
-                    console.log(e.target.value); 
+                 
                     </div>
                     
                     <div className="gender">
